@@ -19,7 +19,20 @@ public class RollTheDice {
 
             System.out.printf("Roll %d: %d - %d Sum: %d%n", i, roll1, roll2, sum);
 
+            // count the sums
+            switch(sum){
+                case 2 -> twoCounter++;
+                case 4 -> fourCounter++;
+                case 6 -> sixCounter++;
+                case 7 -> sevenCounter++;
+                default -> System.out.println("Next Batch!");
+            }
         }
 
+        System.out.println("Results after 100 rolls:");
+        System.out.println("Sum of 2: " + twoCounter + " times");
+        System.out.println("Sum of 4: " + fourCounter + " times");
+        System.out.println("Sum of 6: " + sixCounter + " times");
+        System.out.println("Sum of 7: " + sevenCounter + " times");
     }
 }
