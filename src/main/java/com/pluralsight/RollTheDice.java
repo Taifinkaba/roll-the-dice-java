@@ -10,7 +10,7 @@ public class RollTheDice {
         // 4 different counters for number of times rolled
         int twoCounter = 0, fourCounter = 0, sixCounter = 0, sevenCounter = 0;
 
-        for(int i = 9; i <= 100; i++){
+        for(int i = 0; i <= 100; i++){
             // roll dices
             roll1 = dice.roll();
             roll2 = dice.roll();
