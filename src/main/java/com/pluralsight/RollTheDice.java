@@ -29,10 +29,19 @@ public class RollTheDice {
             }
         }
 
+        // counter for each goes into display method
         System.out.println("Results after 100 rolls:");
-        System.out.println("Sum of 2: " + twoCounter + " times");
-        System.out.println("Sum of 4: " + fourCounter + " times");
-        System.out.println("Sum of 6: " + sixCounter + " times");
-        System.out.println("Sum of 7: " + sevenCounter + " times");
+        display(2, twoCounter);
+        display(4, fourCounter);
+        display(6, sixCounter);
+        display(7, sevenCounter);
+
+
+
+    }
+
+    static void display(int sum, int counter) {
+        System.out.println("Sum of " + sum+ ": " + counter+ " times");
+
     }
 }
